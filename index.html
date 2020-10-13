@@ -17,7 +17,7 @@
                     $.each(data, function (i, item) {
                         titleArr.push(item.title);
                         contentArr.push(item.content);
-                        $("#content").append('<p><a href="content.html" onclick="updateContent(' + i + ')">' + item.title + '</a></p>')
+                        $("#content").append('<p><a id="alink" href="content.html" onclick="updateContent(' + i + ')">' + item.title + '</a></p>')
                     });
                 });
             }();
@@ -39,7 +39,17 @@
 
     <div id="content">
         </div>
-
+<style type="text/css">
+	#alink{
+		color: blue;
+		line-height:2.3rem;
+		font-size: 1.8rem;
+		font-family: "arial rounded mt bold";
+		white-space:pre-wrap;
+	    word-wrap:break-word;  
+	    word-break:break-all;  
+	     }
+	</style>
 </body>
 
 </html>
