@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title id="title">考研政治2021最新资料</title>
+    <script type="text/javascript" src="jq.js"></script>
+    <script>
+        window.onload = function () {
+            document.getElementById("title").innerHTML = localStorage.getItem("title");
+            document.getElementById("content").innerHTML = localStorage.getItem("content");
+            var Ajax = function () {
+                $.getJSON("da.json", function (data) {
+                    $.each(data, function (i, item) {
+                        console.log(item.img);
+                    });
+                });
+            }();
+        }
+
+    </script>
+</head>
+
+<body>
+
+    <p id="content" style="white-space:pre"></p>
+
+</body>
+
+</html>
