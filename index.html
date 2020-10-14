@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html>
-
 	<head>
 		<meta charset="utf-8">
 		<title id="title">考研政治2021最新资料</title>
@@ -8,10 +7,7 @@
 		<script>
 			var titleArr = []
         var contentArr = []
-        window.onload = function () {
-            // document.getElementById("title").innerHTML = localStorage.getItem("title");
-            // document.getElementById("content").innerHTML = localStorage.getItem("content");
-            
+        window.onload = function () {    
             var Ajax = function () {
                 $.getJSON("da.json", function (data) {
                     $.each(data, function (i, item) {
@@ -21,8 +17,6 @@
                     });
                 });
             }();
-
-            
         }
 
         function updateContent(index) {
@@ -38,8 +32,19 @@
 	<body>
 
 		<div id="content">
+			<img src="https://ss1.bdstatic.com/70cFvXSh_Q1YnxGkpoWK1HF6hhy/it/u=513879046,3320477739&fm=15&gp=0.jpg" id="topImage"></img>
 		</div>
+		<img src="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1602693430195&di=f96031f436c6c6035bb18a3ca981eda6&imgtype=0&src=http%3A%2F%2F5b0988e595225.cdn.sohucs.com%2Fimages%2F20181222%2F8b3c37f2ef9b42b6b985f80c2c56c6e2.jpeg" id="topImage"></img>
+		<p id="lasttext">---今年我陪你们一起考研</p>
 		<style type="text/css">
+			
+			#topImage {
+			width: 100%;
+			height: auto;
+			margin: 0 auto;
+			border: 1px solid #000000;
+			}
+			
 			#alink {
 				color: royalblue;
 				font-size: 58px;
@@ -53,6 +58,14 @@
 				width: 100%;
 				height: auto;
 				background-color: antiquewhite;
+				padding: 50px;
+			}
+			
+			#lasttext {
+				color: red;
+				text-align: right;
+				font-size: 42px;
+				padding: 10px;
 			}
 		</style>
 	</body>
