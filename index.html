@@ -5,6 +5,7 @@
 		<title id="title">考研政治2021最新资料</title>
 		<script type="text/javascript" src="jq.js"></script>
 		<script src="vue.js"></script>
+		<script src="yinghua.js"></script>
 	</head>
 
 	<body>
@@ -35,7 +36,6 @@
 						var that = this;
 						$.getJSON("da.json", function (data) {
 							that.contentModelArray = data;
-							console.log(that.contentModelArray)
 							})
 					},
 					saveCurrentContent:function(index) {
