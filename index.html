@@ -15,7 +15,7 @@
 				<p v-for="(content,index) in contentModelArray"><a id="alink" href="content.html" v-on:click="saveCurrentContent(index)">{{content.title}}</a></p>
 			</div>
 			<img src="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1602693430195&di=f96031f436c6c6035bb18a3ca981eda6&imgtype=0&src=http%3A%2F%2F5b0988e595225.cdn.sohucs.com%2Fimages%2F20181222%2F8b3c37f2ef9b42b6b985f80c2c56c6e2.jpeg"
-			 id="topImage"></img>
+			 id="bottomImage"></img>
 			<p id="lasttext">---今年我陪你们一起考研</p>
 		</div>
 		<script>
@@ -63,6 +63,15 @@
 				margin: 0 auto;
 				border: 1px solid #000000;
 			}
+			
+			#bottomImage {
+				width: 110%;
+				justify-content: center;
+				height: auto;
+				display: block;
+				margin: 0 auto;
+				border: 1px solid #000000;
+			}
 
 			#alink {
 				color: royalblue;
@@ -82,9 +91,11 @@
 
 			#lasttext {
 				color: red;
+				display: block;
 				text-align: right;
 				font-size: 42px;
-				padding: 10px;
+				font-weight: bold;
+				
 			}
 		</style>
 	</body>
