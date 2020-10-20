@@ -6,6 +6,11 @@
 		<script type="text/javascript" src="jq.js"></script>
 		<script src="vue.js"></script>
 		<script src="yinghua.js"></script>
+		<script type="text/javascript">
+			function getAppInfo(str) {
+				alert(str);
+			}
+		</script>
 	</head>
 
 	<body>
@@ -29,9 +34,6 @@
 					this.getJsonData();
 				},
 				methods:{
-					getAppInfo(str) {
-						alert(str);
-					},
 					tapbtn:function() {
 						alert("Yes!Awesome!");
 					},
@@ -56,8 +58,9 @@
 				display: flex;
 				justify-content: center;
 				background-color: antiquewhite;
-				
+
 			}
+
 			#topImage {
 				width: 100%;
 				justify-content: center;
@@ -66,7 +69,7 @@
 				margin: 0 auto;
 				border: 1px solid #000000;
 			}
-			
+
 			#bottomImage {
 				width: 110%;
 				justify-content: center;
@@ -98,7 +101,7 @@
 				text-align: right;
 				font-size: 42px;
 				font-weight: bold;
-				
+
 			}
 		</style>
 	</body>
