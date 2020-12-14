@@ -1,0 +1,42 @@
+[
+    {
+        "foodName": "egg",
+        "weight": "100",
+        "protein": "13.8"
+    },
+    {
+        "foodName": "potato",
+        "weight": "100",
+        "protein": "2"
+    },
+    {
+        "foodName": "noodles",
+        "weight": "100",
+        "protein": "8.3"
+    },
+    {
+        "foodName": "Sweet potato",
+        "weight": "100",
+        "protein": "2.1"
+    },
+    {
+        "foodName": "corn",
+        "weight": "100",
+        "protein": "4.0"
+    },
+    {
+        "foodName": "walnut",
+        "weight": "100",
+        "protein": "14.0"
+    },
+    {
+        "foodName": "peanut",
+        "weight": "100",
+        "protein": "12.0"
+    },
+    {
+        "foodName": "Sea shrimp",
+        "weight": "100",
+        "protein": "16.4"
+    }
+]

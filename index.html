@@ -36,6 +36,7 @@
 						var that = this;
 						$.getJSON("da.json", function (data) {
 							that.contentModelArray = data;
+							that.contentModelArray.reverse();
 							})
 					},
 					saveCurrentContent:function(index) {
